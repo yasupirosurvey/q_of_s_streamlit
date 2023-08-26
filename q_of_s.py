@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 #データセットの読み込み
-df = pd.read_csv('/home/vrladmin/kikagaku/streamlit/stocks/csv/sample.csv')
+df = pd.read_csv('./sample.csv')
 
 #目標値を数値にラベルづけ
 df.loc[df['quality of sleep'] == 0, 'quality of sleep'] = 'いまいち'
